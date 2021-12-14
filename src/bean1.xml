@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:p="http://www.springframework.org/schema/p"
+
+	xmlns:util="http://www.springframework.org/schema/util"
+
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+   	http://www.springframework.org/schema/beans
+   	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+   	http://www.springframework.org/schema/aop
+  	http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+   	http://www.springframework.org/schema/tx
+  	http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
+   	http://www.springframework.org/schema/context
+   	http://www.springframework.org/schema/context/spring-context-3.0.xsd
+   	
+   	http://www.springframework.org/schema/util
+   	http://www.springframework.org/schema/util/spring-util.xsd
+   	">
+
+	<!-- 开启组件扫描 -->
+	<!-- context 上下文 -->
+	<!-- component-scan 组件扫描 -->
+	<!-- 基本包 包（扫描哪个包下的内容） -->
+	<!-- 扫描多包下注解， 方式一： base-package="com.junjay.spring5.dao,com.junjay.spring5.service 
+		中间以逗号隔开" 方式二：扫描包的上层目录com.junjay.spring5 -->
+	<context:component-scan
+		base-package="com.junjay.spring5"></context:component-scan>
+
+	<!-- 实例1 use-default-filters="false" 默认为 true 作用是否扫描com.junjay.spring5下的所有注解， 
+		改为false之后，可以自定义扫描那些注解 include-filter 扫描那些注解 通俗语言：不在扫描com.junjay.spring5的所有注解， 
+		而只扫描@Service（org.springframework.stereotype.Service）注解 -->
+	<context:component-scan
+		base-package="com.junjay.spring5" use-default-filters="false">
+		<context:include-filter type="annotation"
+			expression="org.springframework.stereotype.Service" />
+	</context:component-scan>
+
+	<!-- 实例2 下面配置扫描包所有注解 exclude-filter 不扫描那些注解 白话：扫描com.junjay.spring5下的所有注解， 
+		但不扫描@Service（org.springframework.stereotype.Service）注解 -->
+	<context:component-scan
+		base-package="com.junjay.spring5">
+		<context:exclude-filter type="annotation"
+			expression="org.springframework.stereotype.Service" />
+	</context:component-scan>
+
+</beans>

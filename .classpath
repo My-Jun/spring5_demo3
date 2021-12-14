@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="lib" path="lib/spring-beans-5.2.9.RELEASE.jar" sourcepath="C:/Users/Lenovo/AppData/Local/Temp/.org.sf.feeling.decompiler1637932430980/source/spring-beans-5.2.9.RELEASE-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/spring-context-5.2.9.RELEASE.jar" sourcepath="C:/Users/Lenovo/AppData/Local/Temp/.org.sf.feeling.decompiler1636371918708/source/spring-context-5.2.9.RELEASE-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/spring-core-5.2.9.RELEASE.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/spring-expression-5.2.9.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/druid-1.1.22.jar" sourcepath="C:/Users/Lenovo/AppData/Local/Temp/.org.sf.feeling.decompiler1638110748081/source/druid-1.1.22-sources-1638111403319.jar"/>
+	<classpathentry kind="lib" path="lib/spring-aop-5.2.9.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-aspects-5.2.9.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/aspectjweaver-1.9.6.jar"/>
+	<classpathentry kind="lib" path="lib/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/cglib-2.2.2.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
